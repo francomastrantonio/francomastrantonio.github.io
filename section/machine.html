@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        html {
+            font-family: 'Roboto', sans-serif;
+            font-style: inherit;
+        }
+        </style> 
+
+    <title>Drum Secuencer</title>
+</head>
+<body>
+    
+    <div class="container-main center">
+        
+        <a href="../index.html"><button id="returnboton">RETURN</button></a>     
+        <div class="machine">
+
+            <div class="comands">
+                <label for="bpm"><span>BPM</span></label>
+                    <input type="number" id="bpm" name="bpm" min="60" max="200" value="60">
+
+                <button class="sample comandsbutton" data-sample="sequencer">PLAY</button>
+                <button class="sample comandsbutton" data-sample="sequencerStop">STOP</button>
+                <button class="sample comandsbutton" data-sample="sequencerClean">CLEAN</button>
+                <button class="sample comandsbutton" data-sample="sequencerDemo">SET DEMO</button>
+            </div>
+
+        <table class="sequencerSteps">
+            <div class="kick">
+                <tr>
+                    <td>
+                        <button class="sample" data-sample="kick" data-key="1"><span>Kick</span></button>
+                    </td>
+                    
+                    <td><input type="checkbox" name="checkbox" id="kickStep" data-stepnum="1"></td>
+                    <td><input type="checkbox" name="checkbox" id="kickStep" data-stepnum="2"></td>
+                    <td><input type="checkbox" name="checkbox" id="kickStep" data-stepnum="3"></td>
+                    <td><input type="checkbox" name="checkbox" id="kickStep" data-stepnum="4"></td>
+                    <td><input type="checkbox" name="checkbox" id="kickStep" data-stepnum="5"></td>
+                    <td><input type="checkbox" name="checkbox" id="kickStep" data-stepnum="6"></td>
+                    <td><input type="checkbox" name="checkbox" id="kickStep" data-stepnum="7"></td>
+                    <td><input type="checkbox" name="checkbox" id="kickStep" data-stepnum="8"></td>
+                    
+                </div>
+            </tr>
+            
+            <div class="clap">
+                <tr>
+                    <td><button class="sample" data-sample="clap" data-key="2"><span>Clap</span></button></td>
+                    <td><input type="checkbox" name="checkbox" id="clapStep" data-stepnum="1"></td>
+                    <td><input type="checkbox" name="checkbox" id="clapStep" data-stepnum="2"></td>
+                    <td><input type="checkbox" name="checkbox" id="clapStep" data-stepnum="3"></td>
+                    <td><input type="checkbox" name="checkbox" id="clapStep" data-stepnum="4"></td>
+                    <td><input type="checkbox" name="checkbox" id="clapStep" data-stepnum="5"></td>
+                    <td><input type="checkbox" name="checkbox" id="clapStep" data-stepnum="6"></td>
+                    <td><input type="checkbox" name="checkbox" id="clapStep" data-stepnum="7"></td>
+                    <td><input type="checkbox" name="checkbox" id="clapStep" data-stepnum="8"></td>
+                </tr>
+            </div>
+            
+            <div class="hihat">
+                <tr>
+                    <td><button class="sample" data-sample="hihat" data-key="3"><span>Hi Hat</span></button></td>
+                    <td><input type="checkbox" name="checkbox" id="hiHatStep" data-stepnum="1"></td>
+                    <td><input type="checkbox" name="checkbox" id="hiHatStep" data-stepnum="2"></td>
+                    <td><input type="checkbox" name="checkbox" id="hiHatStep" data-stepnum="3"></td>
+                    <td><input type="checkbox" name="checkbox" id="hiHatStep" data-stepnum="4"></td>
+                    <td><input type="checkbox" name="checkbox" id="hiHatStep" data-stepnum="5"></td>
+                    <td><input type="checkbox" name="checkbox" id="hiHatStep" data-stepnum="6"></td>
+                    <td><input type="checkbox" name="checkbox" id="hiHatStep" data-stepnum="7"></td>
+                    <td><input type="checkbox" name="checkbox" id="hiHatStep" data-stepnum="8"></td>
+                </tr>            
+            </div>
+            
+            <div class="shake">
+                <tr>
+                    <td><button class="sample" data-sample="shake" data-key="4"><span>Shake</span></button></td>
+                    <td><input type="checkbox" name="checkbox" id="shakeStep" data-stepnum="1"></td>
+                    <td><input type="checkbox" name="checkbox" id="shakeStep" data-stepnum="2"></td>
+                    <td><input type="checkbox" name="checkbox" id="shakeStep" data-stepnum="3"></td>
+                    <td><input type="checkbox" name="checkbox" id="shakeStep" data-stepnum="4"></td>
+                    <td><input type="checkbox" name="checkbox" id="shakeStep" data-stepnum="5"></td>
+                    <td><input type="checkbox" name="checkbox" id="shakeStep" data-stepnum="6"></td>
+                    <td><input type="checkbox" name="checkbox" id="shakeStep" data-stepnum="7"></td>
+                    <td><input type="checkbox" name="checkbox" id="shakeStep" data-stepnum="8"></td>
+                </tr>
+            </div>
+            
+            <div class="tom_low">
+                <tr>
+                    <td><button class="sample" data-sample="tom_low" data-key="5"><span>Tom low</span></button></td>
+                    <td><input type="checkbox" name="checkbox" id="tomLowStep" data-stepnum="1"></td>
+                    <td><input type="checkbox" name="checkbox" id="tomLowStep" data-stepnum="2"></td>
+                    <td><input type="checkbox" name="checkbox" id="tomLowStep" data-stepnum="3"></td>
+                    <td><input type="checkbox" name="checkbox" id="tomLowStep" data-stepnum="4"></td>
+                    <td><input type="checkbox" name="checkbox" id="tomLowStep" data-stepnum="5"></td>
+                    <td><input type="checkbox" name="checkbox" id="tomLowStep" data-stepnum="6"></td>
+                    <td><input type="checkbox" name="checkbox" id="tomLowStep" data-stepnum="7"></td>
+                    <td><input type="checkbox" name="checkbox" id="tomLowStep" data-stepnum="8"></td>
+                </tr>
+            </div>
+            
+        </table>
+           
+        </div>
+    </div>
+    <audio src="../samples/kick.wav" id="soundkick"></audio>
+    <audio src="../samples/clap.wav" id="soundclap"></audio>
+    <audio src="../samples/shake.wav" id="soundshake"></audio>
+    <audio src="../samples/hihat.wav" id="soundhihat"></audio>
+    <audio src="../samples/tom_low.wav" id="soundtom_low"></audio>
+    <script src="../app.js"></script>
+</body>
+</html>
